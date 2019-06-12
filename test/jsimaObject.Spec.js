@@ -1,5 +1,5 @@
 const assert = require('assert')
-const searchCoordSys = require('../lib/searchCoordinateSystem')
+const searchCoordSys = require('../lib/jsimaObject').searchCoordinateSystem
 
 const xmlObj = require('./dummy.json')
 
