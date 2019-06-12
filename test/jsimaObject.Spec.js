@@ -22,13 +22,23 @@ describe('XMLを変換したJSONから測地系を取得する', () => {
   })
 
   const simaObj = xmlObj['jsima:GI']['jsima:dataset'][0]['jsima:object'][0]
-  const namedPolygonObject = jsima.chibanIntoproperties(
+  const namedPolygonObject = jsima.chibanIntoProperties(
     simaObj['jsima:Kakuchi'],
     polygonObject
   )
-  it('名前付きポリゴンの作成', () => {
+  it('地番付きポリゴンの作成', () => {
     const contentObject = require('./data/namedObject.json')
     const content = JSON.stringify(contentObject)
     assert.equal(content, JSON.stringify(namedPolygonObject))
+  })
+
+  const areadPolygonObject = jsima.areaIntoProperties(
+    simaObj['jsima:Chiban'],
+    namedPolygonObject
+  )
+  it('所在他情報付きポリゴンの作成', () => {
+    const contentObject = require('./data/areadObject.json')
+    const content = JSON.stringify(contentObject)
+    assert.equal(content, JSON.stringify(areadPolygonObject))
   })
 })
