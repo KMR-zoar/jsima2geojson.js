@@ -1,0 +1,27 @@
+{
+  "name": "jsima2geojson",
+  "version": "1.0.0",
+  "description": "Convert SIMA(JPGIS) to GeoJSON",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "node src/inde.js"
+  },
+  "keywords": [
+    "SIMA",
+    "GeoJSON"
+  ],
+  "author": "Zoar",
+  "license": "MIT",
+  "dependencies": {
+    "@turf/helpers": "^6.1.4",
+    "@turf/line-to-polygon": "^6.0.1",
+    "iconv-lite": "^0.4.24",
+    "proj4": "^2.5.0",
+    "xml2js": "^0.4.19"
+  },
+  "devDependencies": {
+    "assert": "^2.0.0",
+    "mocha": "^6.1.4"
+  }
+}

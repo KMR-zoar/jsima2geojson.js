@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="shift_jis"?>
+<jsima:GI xmlns:jps="http://www.gsi.go.jp/GIS/jpgis/standardSchemas2.1_2009-05" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://www.jsima.or.jp/JSIMASchema/201206 jsima102.xsd" timeStamp="2019-06-12T11:03:31" version="1.0" xmlns:jsima="http://www.jsima.or.jp/JSIMASchema/201206">
+  <!--メタデータ-->
+  <jsima:exchangeMetadata>
+    <jps:datasetCitation>
+      <jps:title>測量データ交換フォーマットSIMAデータ集合</jps:title>
+      <jps:date>
+        <jps:date>2009-09-01</jps:date>
+        <jps:dateType>001</jps:dateType>
+      </jps:date>
+    </jps:datasetCitation>
+    <jps:metadataCitation>
+      <jps:title>測量データ交換フォーマットSIMAの交換メタデータ</jps:title>
+      <jps:date>
+        <jps:date>2009-09-01</jps:date>
+        <jps:dateType>001</jps:dateType>
+      </jps:date>
+    </jps:metadataCitation>
+    <jps:encodingRule>
+      <jps:encodingRuleCitation>
+        <jps:title>SIMA(JPGIS) 附属書B XMLに基づく符号化規則</jps:title>
+        <jps:date>
+          <jps:date>2009-09-01</jps:date>
+          <jps:dateType>001</jps:dateType>
+        </jps:date>
+      </jps:encodingRuleCitation>
+    </jps:encodingRule>
+  </jsima:exchangeMetadata>
+  <jsima:dataset>
+    <!--現場情報-->
+    <jsima:GenbaJoho>
+      <jsima:Name/>
+      <jsima:CoordinateSystem>9</jsima:CoordinateSystem>
+      <jsima:Crs>2</jsima:Crs>
+      <jsima:Worker/>
+      <jsima:Client/>
+      <jsima:Engineer/>
+      <jsima:Start>2015-01-27</jsima:Start>
+      <jsima:Comment/>
+    </jsima:GenbaJoho>
+    <jsima:object>
+      <!--GM_Point-->
+      <jps:GM_Point id="pnt000001">
+        <jps:CRS uuidref="jpsuuid:JGD2011.pl09"/>
+        <jps:position>
+          <jps:coordinate>0.000 0.000</jps:coordinate>
+        </jps:position>
+      </jps:GM_Point>
+      <jps:GM_Point id="pnt000002">
+        <jps:CRS uuidref="jpsuuid:JGD2011.pl09"/>
+        <jps:position>
+          <jps:coordinate>10.000 0.000</jps:coordinate>
+        </jps:position>
+      </jps:GM_Point>
+      <jps:GM_Point id="pnt000003">
+        <jps:CRS uuidref="jpsuuid:JGD2011.pl09"/>
+        <jps:position>
+          <jps:coordinate>10.000 10.000</jps:coordinate>
+        </jps:position>
+      </jps:GM_Point>
+      <jps:GM_Point id="pnt000004">
+        <jps:CRS uuidref="jpsuuid:JGD2011.pl09"/>
+        <jps:position>
+          <jps:coordinate>0.000 10.000</jps:coordinate>
+        </jps:position>
+      </jps:GM_Point>
+      <jps:GM_Point id="pnt000005">
+        <jps:CRS uuidref="jpsuuid:JGD2011.pl09"/>
+        <jps:position>
+          <jps:coordinate>-10.000 0.000</jps:coordinate>
+        </jps:position>
+      </jps:GM_Point>
+      <jps:GM_Point id="pnt000006">
+        <jps:CRS uuidref="jpsuuid:JGD2011.pl09"/>
+        <jps:position>
+          <jps:coordinate>-10.000 10.000</jps:coordinate>
+        </jps:position>
+      </jps:GM_Point>
+      <jps:GM_Point id="pnt000007">
+        <jps:CRS uuidref="jpsuuid:JGD2011.pl09"/>
+        <jps:position>
+          <jps:coordinate>5.000 5.000</jps:coordinate>
+        </jps:position>
+      </jps:GM_Point>
+      <jps:GM_Point id="pnt000008">
+        <jps:CRS uuidref="jpsuuid:JGD2011.pl09"/>
+        <jps:position>
+          <jps:coordinate>-5.000 5.000</jps:coordinate>
+        </jps:position>
+      </jps:GM_Point>
+      <!--GM_Curve-->
+      <jps:GM_Curve id="crv000001">
+        <jps:CRS/>
+        <jps:proxy idref="crv000001"/>
+        <jps:orientation>+</jps:orientation>
+        <jps:primitive idref="crv000001"/>
+        <jps:segment>
+          <jps:GM_LineString>
+            <jps:interpolation>linear</jps:interpolation>
+            <jps:controlPoint>
+              <jps:column>
+                <jps:indirect>
+                  <jps:point idref="pnt000004"/>
+                </jps:indirect>
+              </jps:column>
+              <jps:column>
+                <jps:indirect>
+                  <jps:point idref="pnt000003"/>
+                </jps:indirect>
+              </jps:column>
+            </jps:controlPoint>
+          </jps:GM_LineString>
+        </jps:segment>
+      </jps:GM_Curve>
+      <jps:GM_Curve id="crv000002">
+        <jps:CRS/>
+        <jps:proxy idref="crv000002"/>
+        <jps:orientation>+</jps:orientation>
+        <jps:primitive idref="crv000002"/>
+        <jps:segment>
+          <jps:GM_LineString>
+            <jps:interpolation>linear</jps:interpolation>
+            <jps:controlPoint>
+              <jps:column>
+                <jps:indirect>
+                  <jps:point idref="pnt000003"/>
+                </jps:indirect>
+              </jps:column>
+              <jps:column>
+                <jps:indirect>
+                  <jps:point idref="pnt000002"/>
+                </jps:indirect>
+              </jps:column>
+            </jps:controlPoint>
+          </jps:GM_LineString>
+        </jps:segment>
+      </jps:GM_Curve>
+      <jps:GM_Curve id="crv000003">
+        <jps:CRS/>
+        <jps:proxy idref="crv000003"/>
+        <jps:orientation>+</jps:orientation>
+        <jps:primitive idref="crv000003"/>
+        <jps:segment>
+          <jps:GM_LineString>
+            <jps:interpolation>linear</jps:interpolation>
+            <jps:controlPoint>
+              <jps:column>
+                <jps:indirect>
+                  <jps:point idref="pnt000002"/>
+                </jps:indirect>
+              </jps:column>
+              <jps:column>
+                <jps:indirect>
+                  <jps:point idref="pnt000001"/>
+                </jps:indirect>
+              </jps:column>
+            </jps:controlPoint>
+          </jps:GM_LineString>
+        </jps:segment>
+      </jps:GM_Curve>
+      <jps:GM_Curve id="crv000004">
+        <jps:CRS/>
+        <jps:proxy idref="crv000004"/>
+        <jps:proxy idref="_crv000004"/>
+        <jps:orientation>+</jps:orientation>
+        <jps:primitive idref="crv000004"/>
+        <jps:segment>
+          <jps:GM_LineString>
+            <jps:interpolation>linear</jps:interpolation>
+            <jps:controlPoint>
+              <jps:column>
+                <jps:indirect>
+                  <jps:point idref="pnt000001"/>
+                </jps:indirect>
+              </jps:column>
+              <jps:column>
+                <jps:indirect>
+                  <jps:point idref="pnt000004"/>
+                </jps:indirect>
+              </jps:column>
+            </jps:controlPoint>
+          </jps:GM_LineString>
+        </jps:segment>
+      </jps:GM_Curve>
+      <jps:GM_OrientableCurve id="_crv000004">
+        <jps:proxy idref="_crv000004"/>
+        <jps:proxy idref="crv000004"/>
+        <jps:orientation>-</jps:orientation>
+        <jps:primitive idref="crv000004"/>
+      </jps:GM_OrientableCurve>
+      <jps:GM_Curve id="crv000005">
+        <jps:CRS/>
+        <jps:proxy idref="crv000005"/>
+        <jps:orientation>+</jps:orientation>
+        <jps:primitive idref="crv000005"/>
+        <jps:segment>
+          <jps:GM_LineString>
+            <jps:interpolation>linear</jps:interpolation>
+            <jps:controlPoint>
+              <jps:column>
+                <jps:indirect>
+                  <jps:point idref="pnt000006"/>
+                </jps:indirect>
+              </jps:column>
+              <jps:column>
+                <jps:indirect>
+                  <jps:point idref="pnt000004"/>
+                </jps:indirect>
+              </jps:column>
+            </jps:controlPoint>
+          </jps:GM_LineString>
+        </jps:segment>
+      </jps:GM_Curve>
+      <jps:GM_Curve id="crv000006">
+        <jps:CRS/>
+        <jps:proxy idref="crv000006"/>
+        <jps:orientation>+</jps:orientation>
+        <jps:primitive idref="crv000006"/>
+        <jps:segment>
+          <jps:GM_LineString>
+            <jps:interpolation>linear</jps:interpolation>
+            <jps:controlPoint>
+              <jps:column>
+                <jps:indirect>
+                  <jps:point idref="pnt000001"/>
+                </jps:indirect>
+              </jps:column>
+              <jps:column>
+                <jps:indirect>
+                  <jps:point idref="pnt000005"/>
+                </jps:indirect>
+              </jps:column>
+            </jps:controlPoint>
+          </jps:GM_LineString>
+        </jps:segment>
+      </jps:GM_Curve>
+      <jps:GM_Curve id="crv000007">
+        <jps:CRS/>
+        <jps:proxy idref="crv000007"/>
+        <jps:orientation>+</jps:orientation>
+        <jps:primitive idref="crv000007"/>
+        <jps:segment>
+          <jps:GM_LineString>
+            <jps:interpolation>linear</jps:interpolation>
+            <jps:controlPoint>
+              <jps:column>
+                <jps:indirect>
+                  <jps:point idref="pnt000005"/>
+                </jps:indirect>
+              </jps:column>
+              <jps:column>
+                <jps:indirect>
+                  <jps:point idref="pnt000006"/>
+                </jps:indirect>
+              </jps:column>
+            </jps:controlPoint>
+          </jps:GM_LineString>
+        </jps:segment>
+      </jps:GM_Curve>
+      <!--GM_Surface-->
+      <jps:GM_Surface id="srf000001">
+        <jps:orientation>+</jps:orientation>
+        <jps:primitive idref="srf000001"/>
+        <jps:patch>
+          <jps:GM_Polygon>
+            <jps:interpolation>planar</jps:interpolation>
+            <jps:boundary id="sfb000001">
+              <jps:element idref="rng000001"/>
+              <jps:exterior id="rng000001">
+                <jps:CRS/>
+                <jps:orientation>+</jps:orientation>
+                <jps:primitive idref="rng000001"/>
+                <jps:generator idref="crv000001"/>
+                <jps:generator idref="crv000002"/>
+                <jps:generator idref="crv000003"/>
+                <jps:generator idref="crv000004"/>
+              </jps:exterior>
+            </jps:boundary>
+          </jps:GM_Polygon>
+        </jps:patch>
+      </jps:GM_Surface>
+      <jps:GM_Surface id="srf000002">
+        <jps:orientation>+</jps:orientation>
+        <jps:primitive idref="srf000002"/>
+        <jps:patch>
+          <jps:GM_Polygon>
+            <jps:interpolation>planar</jps:interpolation>
+            <jps:boundary id="sfb000002">
+              <jps:element idref="rng000002"/>
+              <jps:exterior id="rng000002">
+                <jps:CRS/>
+                <jps:orientation>+</jps:orientation>
+                <jps:primitive idref="rng000002"/>
+                <jps:generator idref="crv000005"/>
+                <jps:generator idref="_crv000004"/>
+                <jps:generator idref="crv000006"/>
+                <jps:generator idref="crv000007"/>
+              </jps:exterior>
+            </jps:boundary>
+          </jps:GM_Polygon>
+        </jps:patch>
+      </jps:GM_Surface>
+      <!--測点-->
+      <jsima:Sokuten id="simapnt000001">
+        <jsima:Number>1</jsima:Number>
+        <jsima:Name>P001</jsima:Name>
+        <jsima:RefPoint idref="pnt000001"/>
+      </jsima:Sokuten>
+      <jsima:Sokuten id="simapnt000002">
+        <jsima:Number>2</jsima:Number>
+        <jsima:Name>P002</jsima:Name>
+        <jsima:RefPoint idref="pnt000002"/>
+      </jsima:Sokuten>
+      <jsima:Sokuten id="simapnt000003">
+        <jsima:Number>3</jsima:Number>
+        <jsima:Name>P003</jsima:Name>
+        <jsima:RefPoint idref="pnt000003"/>
+      </jsima:Sokuten>
+      <jsima:Sokuten id="simapnt000004">
+        <jsima:Number>4</jsima:Number>
+        <jsima:Name>P004</jsima:Name>
+        <jsima:RefPoint idref="pnt000004"/>
+      </jsima:Sokuten>
+      <jsima:Sokuten id="simapnt000005">
+        <jsima:Number>5</jsima:Number>
+        <jsima:Name>P005</jsima:Name>
+        <jsima:RefPoint idref="pnt000005"/>
+      </jsima:Sokuten>
+      <jsima:Sokuten id="simapnt000006">
+        <jsima:Number>6</jsima:Number>
+        <jsima:Name>P006</jsima:Name>
+        <jsima:RefPoint idref="pnt000006"/>
+      </jsima:Sokuten>
+      <jsima:Sokuten id="simapnt000007">
+        <jsima:Number>7</jsima:Number>
+        <jsima:Name>T01</jsima:Name>
+        <jsima:RefPoint idref="pnt000007"/>
+      </jsima:Sokuten>
+      <jsima:Sokuten id="simapnt000008">
+        <jsima:Number>8</jsima:Number>
+        <jsima:Name>T02</jsima:Name>
+        <jsima:RefPoint idref="pnt000008"/>
+      </jsima:Sokuten>
+      <!--画地-->
+      <jsima:Kakuchi id="simasrf000001">
+        <jsima:Number>1</jsima:Number>
+        <jsima:Name>画地A</jsima:Name>
+        <jsima:RefSurface idref="srf000001"/>
+      </jsima:Kakuchi>
+      <jsima:Kakuchi id="simasrf000002">
+        <jsima:Number>2</jsima:Number>
+        <jsima:Name>画地B</jsima:Name>
+        <jsima:RefSurface idref="srf000002"/>
+      </jsima:Kakuchi>
+      <!--地番-->
+      <jsima:Chiban id="simacbn000001">
+        <jsima:Chimoku>4</jsima:Chimoku>
+        <jsima:KChimoku>9</jsima:KChimoku>
+        <jsima:OAza>大字</jsima:OAza>
+        <jsima:Aza>字</jsima:Aza>
+        <jsima:Area>100.00</jsima:Area>
+        <jsima:KArea>99</jsima:KArea>
+        <jsima:Rotation>0</jsima:Rotation>
+        <jsima:RefKakuchi idref="simasrf000001"/>
+      </jsima:Chiban>
+      <jsima:Chiban id="simacbn000002">
+        <jsima:Chimoku>19</jsima:Chimoku>
+        <jsima:KChimoku>9</jsima:KChimoku>
+        <jsima:OAza>大字</jsima:OAza>
+        <jsima:Aza>字</jsima:Aza>
+        <jsima:Area>100.00</jsima:Area>
+        <jsima:KArea>70</jsima:KArea>
+        <jsima:Rotation>0</jsima:Rotation>
+        <jsima:RefKakuchi idref="simasrf000002"/>
+      </jsima:Chiban>
+    </jsima:object>
+  </jsima:dataset>
+</jsima:GI>
