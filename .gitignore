@@ -1,11 +1,8 @@
 *.xml
 *.geojson
-*.json
 
 !test/dummy.xml
 !package.json
-!package-lock.json
-!settings.json
 # Created by https://www.gitignore.io/api/node
 # Edit at https://www.gitignore.io/?templates=node
 
