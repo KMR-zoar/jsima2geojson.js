@@ -17,6 +17,7 @@ describe('JPGISオブジェクトの変換', () => {
 
   const contentPointObj = require('./data/pointObject.json')
   const contentLineObj = require('./data/lineObject.json')
+  const contentPolygonObj = require('./data/polygonObject.json')
 
   it('ポイントオブジェクトの作成', () => {
     const content = JSON.stringify(contentPointObj)
@@ -27,8 +28,17 @@ describe('JPGISオブジェクトの変換', () => {
     simaObj['jps:GM_Curve'],
     pointObject
   )
-  it('ライン地物の作成', () => {
+  it('ラインオブジェクトの作成', () => {
     const content = JSON.stringify(contentLineObj)
     assert.equal(content, JSON.stringify(lineObject))
+  })
+
+  const polygonObject = jpgisObject.gmSurface2polygon(
+    simaObj['jps:GM_Surface'],
+    lineObject
+  )
+  it('ポリゴンオブジェクトの作成', () => {
+    const content = JSON.stringify(contentPolygonObj)
+    assert.equal(content, JSON.stringify(polygonObject))
   })
 })
