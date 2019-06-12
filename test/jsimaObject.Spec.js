@@ -41,4 +41,11 @@ describe('XMLを変換したJSONから測地系を取得する', () => {
     const content = JSON.stringify(contentObject)
     assert.equal(content, JSON.stringify(areadPolygonObject))
   })
+
+  const featureCollection = jsima.polygonObject2GeoJSON(areadPolygonObject)
+  it('GeoJSONの作成', () => {
+    const contentObject = require('./data/featureCollection.json')
+    const content = JSON.stringify(contentObject)
+    assert.equal(content, JSON.stringify(featureCollection))
+  })
 })
