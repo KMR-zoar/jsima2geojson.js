@@ -3,7 +3,7 @@ const jpgisObject = require('../lib/jpgisObject')
 const getEPSG = require('../lib/coordinateSystem')
 const jsimaObject = require('../lib/jsimaObject')
 
-const xmlObj = require('./dummy.json')
+const xmlObj = require('./data/dummy.json')
 
 describe('JPGISオブジェクトの変換', () => {
   const simaObj = xmlObj['jsima:GI']['jsima:dataset'][0]['jsima:object'][0]
