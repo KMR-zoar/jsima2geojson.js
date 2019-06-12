@@ -2,10 +2,13 @@
   "name": "jsima2geojson",
   "version": "1.0.0",
   "description": "Convert SIMA(JPGIS) to GeoJSON",
-  "main": "src/index.js",
+  "main": "index.js",
   "scripts": {
     "test": "mocha",
     "start": "node src/inde.js"
+  },
+  "bin": {
+    "jsima2geojson": "src/index.js"
   },
   "keywords": [
     "SIMA",
